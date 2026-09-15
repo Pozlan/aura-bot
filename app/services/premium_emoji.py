@@ -46,11 +46,11 @@ EMOJI_IDS: dict[str, tuple[str, str]] = {
     "dart": ("5350460637182993292", "🎯"),
     "afk": ("5451732530048802485", "⏳"),
     "bff": ("5373110220232870002", "💸"),
-    "aura": ("5852612609815093598", "💰"),
+    "aura": ("5811913899150155158", "💰"),
     "skull": ("5462882007451185227", "💀"),
     "wager": ("5226928895189598791", "🥷"),
     "bolt": ("5893450623449305489", "⚡"),
-    "logo": ("5852612609815093598", "✨"),  # AURA mark, used in the DM /start intro
+    "logo": ("5811913899150155158", "✨"),  # AURA mark, used in the DM /start intro
 
     # /streak digit glyphs -- used by render_number() below to spell out
     # the streak count digit-by-digit instead of plain text. Keyed "d0"-
