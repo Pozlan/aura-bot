@@ -33,7 +33,7 @@ class EconomyConfig:
     # once the group's balances settled in the millions. Same cooldown, same
     # odds, just an amount worth actually running the command for.
     FARM_MIN: int = 40_000
-    FARM_MAX: int = 160_000
+    FARM_MAX: int = 150_000
     FARM_COOLDOWN_S: int = 24 * 3600
 
     # /work
@@ -56,13 +56,13 @@ class EconomyConfig:
     LOOT_COOLDOWN_S: int = 2 * 3600
     LOOT_SUCCESS_RATE: float = 0.55
     LOOT_MIN: int = 50_000
-    LOOT_MAX: int = 500_000
+    LOOT_MAX: int = 150_000
 
     # /hunt
     HUNT_COOLDOWN_S: int = 4 * 3600
     HUNT_SUCCESS_RATE: float = 0.5
     HUNT_MIN_STAKE: int = 200
-    HUNT_MAX_STAKE: int = 10_000_000       # was uncapped -- let a big enough stake x4 reward snowball a balance
+    HUNT_MAX_STAKE: int = 250_000
     HUNT_REWARD_MULT: tuple = (1.5, 4.0)   # win: stake * random in this range
     HUNT_LOSS_MULT: tuple = (0.5, 1.0)     # loss: stake * random in this range, deducted
 
@@ -72,10 +72,10 @@ class EconomyConfig:
     # rare zero, common medium, rare big. No loss branch at all.
     LUCK_ZERO_RATE: float = 0.10   # rare: nothing this time
     LUCK_BIG_RATE: float = 0.15    # rare: big win (remainder, 0.75, is the common medium tier)
-    LUCK_MEDIUM_MIN: int = 100_000
-    LUCK_MEDIUM_MAX: int = 500_000
-    LUCK_BIG_MIN: int = 1_000_000
-    LUCK_BIG_MAX: int = 3_000_000
+    LUCK_MEDIUM_MIN: int = 1_000
+    LUCK_MEDIUM_MAX: int = 50_000
+    LUCK_BIG_MIN: int = 50_000
+    LUCK_BIG_MAX: int = 100_000
 
     # House wager caps (0 = no cap -- unlimited wager allowed vs house)
     RPS_MAX_HOUSE_WAGER: int = 250_000
@@ -133,7 +133,7 @@ class EconomyConfig:
     DOOR_DURATION_S: int = 5 * 60
 
     # Starting balance for new players
-    STARTING_BALANCE: int = 100_000
+    STARTING_BALANCE: int = 5_000
 
     # /streak
     # Rolling window, not calendar day -- must run /streak again within
